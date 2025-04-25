@@ -25,7 +25,8 @@ spec:
       containers:
       - name: nginx
         image: ramyajajula/frontend:1.2.0
-        containerPort: 8080
+        ports:
+        - containerPort: 8080
 ---
 kind: Service
 apiVersion: v1
